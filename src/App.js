@@ -1,12 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 function App() {
-  return (
-    <div className="flex min-h-screen items-center justify-center">
-      <p className='text-6xl text-green-800'>Hello world!</p>
+  return  <div className="flex flex-col items-center ">
+        <section className="max-w-[1500px] bg-green-600">
+        {/* <Navbar /> */}
+        <Hero />
+        </section>
+     
     </div>
-  );
+  
 }
 
 export default App;
