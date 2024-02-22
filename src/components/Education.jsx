@@ -35,15 +35,15 @@ const Education = () => {
     ]
   return (
     <section className='px-3 lg:px-10 py-10 lg:py-20'>
-      <p className='text-3xl lg:5xl font-semibold text-center p-4 pb-6'>Education & Work Experience</p>
-      <div className='flex flex-wrap gap-5 items-center justify-center'>
+      <p className='text-3xl font-semibold text-center p-4 pb-6'>Education & Work Experience</p>
+      <div className='flex flex-wrap  items-center justify-center'>
         {EducationData.map((data) => {
             return(
-                <div key={data.id} className='w-full lg:w-2/5 flex flex-col border-2 p-5 border-slate-200 bg-stone-200 rounded-lg shadow-2xl '>
+                <div key={data.id} className='w-full lg:w-2/5  gap-1 flex flex-col border-[1px] p-5 border-slate-400 bg-stone-100 rounded-lg shadow-[#73b6b4] shadow-md mb-6 mr-6'>
                     <div className='flex gap-1 items-center font-semibold'>
                         <IoCalendarOutline size={17}/><p className='text-sm'>{data.time}</p>
                     </div>
-                    <p className='text-2xl lg:text-3xl font-semibold'>{data.title}</p>
+                    <p className='text-2xl lg:text-2xl font-semibold'>{data.title}</p>
                     <div className='flex gap-1 items-center font-semibold'>
                         <CiLocationOn size={18}/><p className='text-sm'>{data.place}</p>
                     </div>
