@@ -40,7 +40,7 @@ const Services = () => {
       <div className='flex  flex-wrap gap-5 justify-center '>
         {ServicesData.map((service) => {
             return(
-                <div key={service.id} className="flex flex-col w-full md:w-1/2 lg:w-1/4 p-5 min-w-80 rounded-ee-3xl rounded-ss-3xl duration-200 hover:rounded-ss-none hover:rounded-ee-none hover:rounded-se-3xl hover:rounded-bl-3xl   border-teal-500 shadow-xl dark:shadow-slate-700  border-2">
+                <div key={service.id} className="flex flex-col w-full md:w-1/2 lg:w-1/4 p-5 min-w-80 rounded-ee-[60px] rounded-ss-[60px] duration-100 hover:rounded-ss-none hover:rounded-ee-none hover:rounded-se-[60px] hover:rounded-bl-[60px] shadow-slate-600  border-teal-500 shadow-xl dark:shadow-slate-700  border-2">
                     <p className='text-xl font-semibold'>{service.title}</p>
                     <img src={service.img} alt={`${service.title} image`} />
                     <p>{service.description}</p>

@@ -12,8 +12,8 @@ const Hero = () => {
             <p className='text-lg w-full '>Hello👋! I'm Selahadin Hamid, a front-end developer with
                 a year of hands-on experience. I bring design visions to life,
                 creating eye-catching banners, captivating cards, and
-                distinctive logos, with expertise in web design for seamless
-                online experiences.
+                distinctive logos, with expertise in transforming web designs into seamless
+                executable code.
             </p>
             <div className='flex gap-4 font-semibold' >
                 <Button name={"Download Resume"}/>
