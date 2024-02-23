@@ -5,7 +5,7 @@ import Services from "./components/Services";
 import Education from "./components/Education";
 
 function App() {
-  return  <div className="bg-white dark:bg-zinc-800 dark:text-gray-100 flex flex-col gap-8 lg:gap-20 items-center ">
+  return  <div className=" dark:bg-zinc-800 dark:text-gray-100 flex flex-col gap-8 lg:gap-20 items-center ">
         <section className="max-w-[1500px] ">
         <Navbar />
         <Hero />

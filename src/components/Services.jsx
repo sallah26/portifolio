@@ -32,7 +32,7 @@ const Services = () => {
         },
     ]
   return (
-    <section className='flex flex-col items-center justify-center gap-3 lg:gap-6 py-5 lg:py-20 text-center'>
+    <section id='services' className='flex flex-col items-center justify-center gap-3 lg:gap-6 py-5 lg:py-20 text-center'>
       <div className='w-full lg:w-55'>
         <p className='text-3xl lg:5xl font-semibold'>What I Do?</p>
         <p className='text-md lg:text-lg'>Transforming ideas into captivating digital realities through web design and development expertise, creating seamless and visually stunning digital experiences</p>
@@ -40,7 +40,7 @@ const Services = () => {
       <div className='flex  flex-wrap gap-5 justify-center '>
         {ServicesData.map((service) => {
             return(
-                <div key={service.id} className="flex flex-col w-full md:w-1/2 lg:w-1/4 p-5 min-w-80 rounded-ee-3xl rounded-ss-3xl duration-200 hover:rounded-ss-none hover:rounded-ee-none hover:rounded-se-3xl hover:rounded-bl-3xl   border-teal-500 shadow-xl  border-2">
+                <div key={service.id} className="flex flex-col w-full md:w-1/2 lg:w-1/4 p-5 min-w-80 rounded-ee-3xl rounded-ss-3xl duration-200 hover:rounded-ss-none hover:rounded-ee-none hover:rounded-se-3xl hover:rounded-bl-3xl   border-teal-500 shadow-xl dark:shadow-slate-700  border-2">
                     <p className='text-xl font-semibold'>{service.title}</p>
                     <img src={service.img} alt={`${service.title} image`} />
                     <p>{service.description}</p>

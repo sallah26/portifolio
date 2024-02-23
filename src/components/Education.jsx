@@ -28,18 +28,18 @@ const Education = () => {
         {
             id: 0,
             title: "Highschool and Preparatory",
-            description: "Attended both my Secondary and Preparatory School at, Silte-Tora Ethiopia.",
+            description: "Attended both my Secondary and Preparatory School in Tora Secondary School at, Silte-Tora Ethiopia.",
             time: "March 2021 - Present",
             place: "At Silte-Tora, Ethiopia",
         },
     ]
   return (
-    <section className='px-3 lg:px-10 py-10 lg:py-20'>
+    <section id='experience' className='px-3 lg:px-10 py-7 '>
       <p className='text-3xl font-semibold text-center p-4 pb-6'>Education & Work Experience</p>
       <div className='flex flex-wrap  items-center justify-center'>
         {EducationData.map((data) => {
             return(
-                <div key={data.id} className='w-full lg:w-2/5  gap-1 flex flex-col border-[1px] p-5 border-slate-400 bg-stone-100 rounded-lg shadow-[#73b6b4] shadow-md mb-6 mr-6'>
+                <div key={data.id} className='w-full lg:w-2/5  gap-1 flex flex-col border-[1px] p-5 border-slate-400 dark:border-slate-500 bg-stone-100 dark:bg-slate-700 dark:text-slate-200 rounded-lg shadow-[#73b6b4] dark:shadow-[#80e4e0] shadow-md hover:shadow-[#78d3d0] hover:shadow-lg duration-300 mb-6 mr-6'>
                     <div className='flex gap-1 items-center font-semibold'>
                         <IoCalendarOutline size={17}/><p className='text-sm'>{data.time}</p>
                     </div>

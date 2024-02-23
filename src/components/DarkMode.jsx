@@ -20,12 +20,12 @@ const DarkModeToggle = () => {
   return (
     <button
       onClick={toggleDarkMode}
-      className="text-slate-800 dark:text-slate-100 "
+      className=""
     >
       {isDarkMode ? (
-        <MdLightMode size={27} color="white" />
+        <MdLightMode size={27} color='white' />
       ) : (
-        <MdDarkMode size={27} color="black" />
+        <MdDarkMode size={27}  />
       )}
     </button>
   );

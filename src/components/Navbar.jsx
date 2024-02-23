@@ -4,6 +4,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import DarkModeToggle from './DarkMode';
 import s_logo from "../assets/images/s-logo.png"
+import Button from './Button';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -20,9 +21,9 @@ const Navbar = () => {
 
   return (
     <header className='text-md pt-5'>
-      <div className=" mx-auto flex items-center max-w-[1222px] justify-between p-1 pb-9 lg:pb-2">
+      <div className=" mx-auto flex items-center max-w-[1182px] justify-between p-1 pb-9 lg:pb-2">
         <div data-aos="fade-down" data-aos-delay="200" className=" ">
-          <img src={s_logo} alt="jifar logo" className='w-14'/>
+          <img src={s_logo} alt="jifar logo" className='w-12'/>
         </div>
         {/* Large devices */}
         <nav className="hidden lg:flex items-center space-x-7 text-md">
@@ -32,7 +33,7 @@ const Navbar = () => {
           
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={70}
             duration={500}
             className="hover:text-gray-400 hover:underline hover:underline-offset-8 "
             data-aos="fade-down" 
@@ -41,20 +42,20 @@ const Navbar = () => {
             Services
           </ScrollLink>
           <ScrollLink
-            to="about-us"
+            to="experience"
             href=''
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={250}
             duration={500}
             className="hover:text-gray-400 hover:underline hover:underline-offset-8"
             data-aos="fade-down" 
             data-aos-delay="300"
           >
-            About us
+            Experience
           </ScrollLink>
           <ScrollLink
-            to="testimonials"
+            to="products"
             href=''
             spy={true}
             smooth={true}
@@ -64,7 +65,7 @@ const Navbar = () => {
             data-aos="fade-down" 
             data-aos-delay="400"
           >
-            Testimonials
+            Products
           </ScrollLink>
           <ScrollLink
             to="footer"
@@ -83,7 +84,7 @@ const Navbar = () => {
           
         </nav>
 
-        <div className=' z-40 flex gap-2 lg:gap-4'>
+        <div className=' z-40 flex gap-2 lg:gap-4 items-center justify-center'>
             <div className=''>
                 <DarkModeToggle />
             </div>
@@ -91,9 +92,7 @@ const Navbar = () => {
                 <HiOutlineMenuAlt2 size={27} />
           </div>
           <div>
-            <button>
-                Contact Me
-            </button>
+           <Button name={"Contact Me"} />
           </div>
         </div>
 
