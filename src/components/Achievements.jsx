@@ -52,7 +52,7 @@ const ProductsData2 = [
   },
 ]
   return (
-    <section className='flex flex-col items-center justify-center text-center py-10 pb-40'>
+    <section className='flex flex-col items-center justify-center text-center py-10 pb-20'>
         <div className='w-full lg:w-[670px] py-10'>
         <p className='text-3xl lg:5xl font-semibold'>Get a Snapshot of My Achievements...</p>
         <p className='text-md lg:text-lg'>A visual journey through impactful projects, innovative solutions, and the creative prowess that defines my digital portfolio.</p>
