@@ -38,7 +38,7 @@ const Navbar = () => {
   
 
   return (
-    <header ref={menuRef} className='text-md pt-5'>
+    <header ref={menuRef} className='text-md py-10 md:py-2 pt-5'>
       <div className=" mx-auto flex items-center max-w-[1182px] justify-between p-1 pb-9 lg:pb-2">
         <div data-aos="fade-down" data-aos-delay="200" className=" ">
           <img src={s_logo} alt="jifar logo" className='w-12'/>
@@ -86,7 +86,7 @@ const Navbar = () => {
             Products
           </ScrollLink>
           <ScrollLink
-            to="footer"
+            to="contact"
             href=''
             spy={true}
             smooth={true}
@@ -103,14 +103,27 @@ const Navbar = () => {
         </nav>
 
         <div className=' z-40 flex gap-2 lg:gap-4 items-center justify-center'>
-            <div className=''>
+            <div className='mt-1.5'>
                 <DarkModeToggle />
             </div>
             <div className="z-30 lg:hidden cursor-pointer" onClick={toggleNavbar}>
                 <HiOutlineMenuAlt2 size={27} />
           </div>
           <div>
+          <ScrollLink
+            to="contact"
+            href=''
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className=""
+            data-aos="fade-down" 
+            data-aos-delay="500"
+          >
+            {/* Contact */}
            <Button name={"Contact Me"} />
+          </ScrollLink>
           </div>
         </div>
 
@@ -146,7 +159,7 @@ const Navbar = () => {
                 </li>
                 <li className="w-full  border-b-2 hover:border-slate-900 border-slate-400 dark:border-slate-700  dark:hover:border-slate-400 hover:cursor-pointer">
                   <ScrollLink
-                    to="about-us"
+                    to="experience"
                     href=''
                     spy={true}
                     smooth={true}
@@ -156,12 +169,12 @@ const Navbar = () => {
                     onClick={() => { toggleNavbar(); }}
                       >
                         {/* <IoHome size={20}/> */}
-                        About us
+                        Experience
                   </ScrollLink>
                 </li>
                 <li className="w-full  border-b-2 hover:border-slate-900 border-slate-400 dark:border-slate-700  dark:hover:border-slate-400 hover:cursor-pointer">
                   <ScrollLink
-                    to="testimonials"
+                    to="products"
                     href=''
                     spy={true}
                     smooth={true}
@@ -171,12 +184,12 @@ const Navbar = () => {
                     onClick={() => { toggleNavbar(); }}
                       >
                         {/* <FaUsersGear size={20}/> */}
-                        Testimonials
+                        Products
                   </ScrollLink>
                 </li>
                 <li className="w-full  border-b-2 hover:border-slate-900 border-slate-400 dark:border-slate-700  dark:hover:border-slate-400 hover:cursor-pointer">
                   <ScrollLink
-                    to="footer"
+                    to="contact"
                     href=''
                     spy={true}
                     smooth={true}

@@ -52,7 +52,7 @@ const ProductsData2 = [
   },
 ]
   return (
-    <section className='flex flex-col items-center justify-center text-center py-10 pb-20'>
+    <section id='products' className='flex flex-col items-center p-4 text-lg justify-center text-center py-7 pb-20'>
         <div className='w-full lg:w-[670px] py-10'>
         <p className='text-3xl lg:5xl font-semibold'>Get a Snapshot of My Achievements...</p>
         <p className='text-md lg:text-lg'>A visual journey through impactful projects, innovative solutions, and the creative prowess that defines my digital portfolio.</p>
@@ -60,7 +60,7 @@ const ProductsData2 = [
       <div className={`${showMore ? "open" : ""} content-container flex flex-wrap justify-center max-w-[1500px] md:gap-3`}>
           {ProductsData.map((product) => {
             return(
-              <div key={product.id} className="my-3 shadow-lg shadow-teal-800 dark:shadow-teal-600 maindiv  w-full h-[300px]    flex flex-col  md:w-[45%] lg:w-[22%] m-7 md:m-1 gap-0 bg-slate-500 rounded-md border-[1.5px] border-teal-600">
+              <div key={product.id} className="my-3 shadow-lg shadow-teal-800 dark:shadow-teal-600 maindiv  w-full h-[300px]    flex flex-col  md:w-[45%] lg:w-[22%] m-3 md:m-1 gap-0 bg-slate-500 rounded-md border-[1.5px] border-teal-600">
                 <img src={img} className='rounded-ss-md rounded-se-md' alt="product image" />
                 <div className='flex flex-col p-2 text-md font-semibold'>
                   <div className="mainbtn flex justify-center">

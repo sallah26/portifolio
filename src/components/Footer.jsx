@@ -5,7 +5,7 @@ import logo from "../assets/images/s-logo.png";
 
 const Footer = () => {
   return (
-    <footer className='min-w-full flex flex-col items-center justify-center p-4 m-0  bg-zinc-200 dark:bg-[#2a3030] border-0 border-t-[3px] border-slate-600 shadow-inner shadow-slate-500 dark:shadow-slate-500'> 
+    <footer id='contact' className='min-w-full flex flex-col items-center justify-center p-4 m-0  bg-zinc-200 dark:bg-[#2a3030] border-0 border-t-[3px] border-slate-600 shadow-inner shadow-slate-500 dark:shadow-slate-500'> 
       
       <div className=' pt-10  flex flex-col md:flex-row gap-2 items-center md:gap-4  justify-between lg:w-[1000px]'>
         <div className='flex items-center'>
