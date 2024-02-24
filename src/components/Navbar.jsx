@@ -90,7 +90,7 @@ const Navbar = () => {
             href=''
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={1310}
             duration={500}
             className="hover:text-gray-400 hover:underline hover:underline-offset-8"
             data-aos="fade-down" 
@@ -163,7 +163,7 @@ const Navbar = () => {
                     href=''
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={0}
                     duration={500}
                     className="px-3 py-2 flex gap-2 items-center hover:translate-x-3 duration-150"
                     onClick={() => { toggleNavbar(); }}
