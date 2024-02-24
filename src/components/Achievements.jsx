@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import img from "../assets/images/Selahadin_portifolio.png"
 import Button from './Button'
 import { MdFastForward } from 'react-icons/md'
+import { HiArrowDown, HiArrowNarrowDown, HiArrowNarrowUp } from 'react-icons/hi'
+import ButtonIcon from './ButtonIcon'
 
 const Achievements = () => {
   const [showMore, setShowMore] = useState(false);
@@ -61,7 +63,7 @@ const ProductsData2 = [
               <div key={product.id} className="my-3 shadow-lg shadow-teal-800 dark:shadow-teal-600 maindiv  w-full h-[300px]    flex flex-col  md:w-[45%] lg:w-[22%] m-7 md:m-1 gap-0 bg-slate-500 rounded-md border-[1.5px] border-teal-600">
                 <img src={img} className='rounded-ss-md rounded-se-md' alt="product image" />
                 <div className='flex flex-col p-2 text-md font-semibold'>
-                  <div className="mainbtn">
+                  <div className="mainbtn flex justify-center">
                   <Button name="Preview Product"/>
                   </div>
                   {/* <button className='mainbtn text-blue-700 text-md'></button> */}
@@ -85,7 +87,7 @@ const ProductsData2 = [
               <div key={product.id} className="my-3 shadow-lg shadow-teal-800 dark:shadow-teal-600 maindiv  w-full h-[300px]    flex flex-col  md:w-[45%] lg:w-[22%] m-7 md:m-1 gap-0 bg-slate-500 rounded-md border-[1.5px] border-teal-600">
                 <img src={img} className='rounded-ss-md rounded-se-md' alt="product image" />
                 <div className='flex flex-col p-2 text-md font-semibold'>
-                  <div className="mainbtn">
+                  <div className="mainbtn flex justify-center">
                   <Button name="Preview Product"/>
                   </div>
                   {/* <button className='mainbtn text-blue-700 text-md'></button> */}
@@ -105,7 +107,10 @@ const ProductsData2 = [
       </div>
       </div>
       <button className='mt-10 duration-[3s]' onClick={handlShowMore}>
-        <Button name={`${showMore ? "Show Less"  : "Show More"}`} icon={`${true}`}/>
+        
+        {/* <HiArrowNarrowDown /> */}
+        
+        <ButtonIcon name={`${showMore ? "Show Less"  : "Show More"}`} icon={showMore}/>
       </button>
       
     

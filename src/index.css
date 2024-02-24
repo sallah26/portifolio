@@ -40,7 +40,7 @@ body{
   z-index: 0;
   /* margin: 0; */
   background: transparent;
-  transition: background 500ms ease-in-out;
+  transition: background cubic-bezier(0.39, 0.575, 0.565, 1) ease-in-out;
 }
 
 .overl{
@@ -52,7 +52,7 @@ body{
   background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.1));
   opacity: 0;
   z-index: 1;
-  transition: opacity 500ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
 
 }
 
@@ -68,7 +68,7 @@ body{
   width: 70%;
   left: 50%;
   transform: translate(-50%, 100%);
-  transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+  transition: transform 300ms ease-in-out, opacity 500ms ease-in-out;
 
 }
 
