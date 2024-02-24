@@ -13,7 +13,7 @@ const Hero = () => {
                 a year of hands-on experience. I bring design visions to life,
                 creating eye-catching banners, captivating cards, and
                 distinctive logos, with expertise in transforming web designs into seamless
-                executable code.
+                executable front-end code.
             </p>
             <div className='flex gap-4 font-semibold' >
                 <Button name={"Download Resume"}/>

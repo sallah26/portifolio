@@ -1,5 +1,7 @@
 import React from 'react'
 import img from "../assets/images/Selahadin_portifolio.png"
+import Button from './Button'
+import { MdFastForward } from 'react-icons/md'
 
 const Achievements = () => {
   const ProductsData = [
@@ -42,14 +44,20 @@ const Achievements = () => {
         <p className='text-3xl lg:5xl font-semibold'>Get a Snapshot of My Achievements...</p>
         <p className='text-md lg:text-lg'>A visual journey through impactful projects, innovative solutions, and the creative prowess that defines my digital portfolio.</p>
       </div>
-      <div className="flex flex-wrap justify-center max-w-[1500px] bg-slate-600 gap-3">
+      <div className="flex flex-wrap justify-center max-w-[1500px] gap-3">
           {ProductsData.map((product) => {
             return(
-              <div key={product.id} className="min-h-[300px] relative py-4 flex flex-col w-full md:w-[45%] lg:w-[22%] m-4 md:m-1 gap-4 bg-slate-500 rounded-md border-2 ">
-                <img src={img} className='p-1' alt="product image" />
-                <div className=' p-4 text-lg font-semibold'>
+              <div key={product.id} className="shadow-lg shadow-teal-800 dark:shadow-teal-600 maindiv min-w-[200px] min-h-[300px]   flex flex-col w-full md:w-[45%] lg:w-[22%] m-4 md:m-1 gap-4 bg-slate-500 rounded-md border-[1.5px] border-teal-600">
+                <img src={img} className='rounded-ss-md rounded-se-md' alt="product image" />
+                <div className='flex flex-col p-2 text-md font-semibold'>
+                  <div className="mainbtn">
+                  <Button name="Preview Product"/>
+                  </div>
+                  {/* <button className='mainbtn text-blue-700 text-md'></button> */}
                   <p>{product.title}</p>
                   
+                </div>
+                <div className='overl'>
                 </div>
               </div>
             )
@@ -58,6 +66,10 @@ const Achievements = () => {
           }
 
 
+      </div>
+
+      <div className='mt-10'>
+        <Button name="Show more" icon={`${true}`}/>
       </div>
     
     </section>
