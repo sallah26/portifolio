@@ -64,7 +64,7 @@ const Navbar = () => {
             href=''
             spy={true}
             smooth={true}
-            offset={250}
+            offset={0}
             duration={500}
             className="hover:text-gray-400 hover:underline hover:underline-offset-8"
             data-aos="fade-down" 
@@ -90,7 +90,7 @@ const Navbar = () => {
             href=''
             spy={true}
             smooth={true}
-            offset={1310}
+            offset={0}
             duration={500}
             className="hover:text-gray-400 hover:underline hover:underline-offset-8"
             data-aos="fade-down" 
