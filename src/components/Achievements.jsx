@@ -1,15 +1,18 @@
 import React, { useState } from 'react'
 import img from "../assets/images/Selahadin_portifolio.png"
+import sShot1 from "../assets/images/Screenshot-jifar.png";
+import sShot2 from "../assets/images/Screenshot-jifar-light.png";
+import sShot3 from "../assets/images/Screenshot-portifolio-light.png";
+import sShot4 from "../assets/images/Screenshot-portifolio.png";
 import Button from './Button'
 import { MdFastForward } from 'react-icons/md'
 import { HiArrowDown, HiArrowNarrowDown, HiArrowNarrowUp } from 'react-icons/hi'
 import ButtonIcon from './ButtonIcon'
 
-const Achievements = () => {
-  // 
-  // cont and i think so this okay let
-  
 
+
+
+const Achievements = () => {
   const [showMore, setShowMore] = useState(false);
   const handlShowMore = () => {
       setShowMore(!showMore);
@@ -18,22 +21,26 @@ const Achievements = () => {
   const ProductsData = [
     {
         id: 0,
-        title: "Website developed for jifar Agency",
+        title: "Website project developed for jifar Agency",
+        image: localStorage.theme === "dark" ? sShot1 : sShot2,
         link: "https://jifarhomes.com",
     },
     {
         id: 1,
         title: "Website developed for jifar Agency",
+        image: "../assets/images/Selahadin_portifolio.png",
         link: "https://jifarhomes.com",
     },
     {
         id: 2,
         title: "Website developed for jifar Agency",
+        image: "../assets/images/Selahadin_portifolio.png",
         link: "https://jifarhomes.com",
     },
     {
         id: 3,
-        title: "Website developed for jifar Agency",
+        title: "My Portfolio Website developed for Business Aim",
+        image: localStorage.theme === "dark" ? sShot4 : sShot3,
         link: "https://jifarhomes.com",
     },
 ]
@@ -41,16 +48,19 @@ const ProductsData2 = [
   {
       id: 0,
       title: "Website developed for jifar Agency",
+      image: "../assets/images/Selahadin_portifolio.png",
       link: "https://jifarhomes.com",
   },
   {
       id: 1,
       title: "Website developed for jifar Agency",
+      image: "../assets/images/Selahadin_portifolio.png",
       link: "https://jifarhomes.com",
   },
   {
       id: 2,
       title: "Website developed for jifar Agency",
+      image: "../assets/images/Selahadin_portifolio.png",
       link: "https://jifarhomes.com",
   },
 ]
@@ -67,13 +77,13 @@ const ProductsData2 = [
           {ProductsData.map((product) => {
             return(
               <div key={product.id} className="my-3 shadow-lg shadow-teal-800 dark:shadow-teal-600 maindiv  w-full h-[300px]    flex flex-col  md:w-[45%] lg:w-[22%] m-7 md:m-1 gap-0 bg-slate-500 rounded-md border-[1.5px] border-teal-600">
-                <img src={img} className='rounded-ss-md rounded-se-md' alt="product image" />
+                <img src={product.image} className='rounded-ss-md rounded-se-md' alt="product image" />
                 <div className='flex flex-col p-2 text-md font-semibold'>
                   <div className="mainbtn flex justify-center">
                   <Button name="Preview Product"/>
                   </div>
                   {/* <button className='mainbtn text-blue-700 text-md'></button> */}
-                  <p>{product.title}</p>
+                  <p className='mt-1'>{product.title}</p>
                   
                 </div>
                 <div className='overl'>
@@ -119,7 +129,6 @@ const ProductsData2 = [
         <ButtonIcon name={`${showMore ? "Show Less"  : "Show More"}`} icon={showMore}/>
       </button>
       
-    
     </section>
   )
 }

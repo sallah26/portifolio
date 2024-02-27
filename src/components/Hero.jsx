@@ -5,7 +5,7 @@ import Button from './Button';
 const Hero = () => {
   return (
     <section className=''>
-      <div className='flex flex-col gap-4 lg:gap-7 lg:flex-row justify-center items-center m-3 py-7 lg:mx-10 lg:py-16  bg-zinc-100 dark:bg-[#2a3030] rounded-2xl shadow-2xl dark:shadow-slate-500 border-[1.5px] border-slate-400 dark:border-slate-500   text-black dark:text-stone-50'>
+      <div className='flex flex-col gap-4 lg:gap-7 lg:flex-row justify-center items-center py-7 lg:py-16  bg-zinc-100 dark:bg-[#2a3030] rounded-2xl shadow-2xl dark:shadow-slate-500 border-[1.5px] border-slate-400 dark:border-slate-500   text-black dark:text-stone-50'>
         <div className='w-full lg:w-2/5 gap-3 flex flex-col p-4 lg:p-1'>
             <p className='text-xl font-semibold lg:text-2xl'>Hello I'm</p>
             <p className='my-name text-4xl  lg:text-5xl space-x-2 text-teal-500 dark:text-teal-400 '>Selahadin Hamid</p>
