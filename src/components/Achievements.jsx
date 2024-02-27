@@ -1,14 +1,15 @@
-import React, { useState } from 'react'
-import img from "../assets/images/Selahadin_portifolio.png"
+import React, { useState } from 'react';
+import img from "../assets/images/Selahadin_portifolio.png";
 import sShot1 from "../assets/images/Screenshot-jifar.png";
 import sShot2 from "../assets/images/Screenshot-jifar-light.png";
 import sShot3 from "../assets/images/Screenshot-portifolio-light.png";
 import sShot4 from "../assets/images/Screenshot-portifolio.png";
-import Button from './Button'
-import { MdFastForward } from 'react-icons/md'
-import { HiArrowDown, HiArrowNarrowDown, HiArrowNarrowUp } from 'react-icons/hi'
-import ButtonIcon from './ButtonIcon'
-
+import sShot5 from "../assets/images/Screenshot-demo.png";
+import sShot6 from "../assets/images/Screenshot-demo-light.png";
+import sShot7 from "../assets/images/Screenshot-afri-coffe.png";
+import sShot8 from "../assets/images/Screenshot-manag.png";
+import ButtonIcon from './ButtonIcon';
+import Button from './Button';
 
 
 
@@ -27,15 +28,15 @@ const Achievements = () => {
     },
     {
         id: 1,
-        title: "Website developed for jifar Agency",
-        image: "../assets/images/Selahadin_portifolio.png",
-        link: "https://jifarhomes.com",
+        title: "Website developed for Feature Digital Marketing Startup",
+        image: localStorage.theme === "dark" ? sShot5 : sShot6,
+        link: "https://project-marketing.vercel.app/",
     },
     {
         id: 2,
-        title: "Website developed for jifar Agency",
-        image: "../assets/images/Selahadin_portifolio.png",
-        link: "https://jifarhomes.com",
+        title: "Website developed for Generative AI Hackathon Competition in Africa",
+        image: sShot7,
+        link: "https://afri-coffee.vercel.app/",
     },
     {
         id: 3,
@@ -47,9 +48,9 @@ const Achievements = () => {
 const ProductsData2 = [
   {
       id: 0,
-      title: "Website developed for jifar Agency",
-      image: "../assets/images/Selahadin_portifolio.png",
-      link: "https://jifarhomes.com",
+      title: "Landing page of developed for Simple tasks management",
+      image: sShot8,
+      link: "https://manage-app-selahadin.vercel.app/",
   },
   {
       id: 1,
@@ -80,7 +81,9 @@ const ProductsData2 = [
                 <img src={product.image} className='rounded-ss-md rounded-se-md' alt="product image" />
                 <div className='flex flex-col p-2 text-md font-semibold'>
                   <div className="mainbtn flex justify-center">
-                  <Button name="Preview Product"/>
+                    <a href={product.link}>
+                      <Button name="Preview Product"/>
+                    </a>
                   </div>
                   {/* <button className='mainbtn text-blue-700 text-md'></button> */}
                   <p className='mt-1'>{product.title}</p>
@@ -101,7 +104,7 @@ const ProductsData2 = [
           {ProductsData2.map((product) => {
             return(
               <div key={product.id} className="my-3 shadow-lg shadow-teal-800 dark:shadow-teal-600 maindiv  w-full h-[300px]    flex flex-col  md:w-[45%] lg:w-[22%] m-7 md:m-1 gap-0 bg-slate-500 rounded-md border-[1.5px] border-teal-600">
-                <img src={img} className='rounded-ss-md rounded-se-md' alt="product image" />
+                <img src={product.image} className='rounded-ss-md rounded-se-md' alt="product image" />
                 <div className='flex flex-col p-2 text-md font-semibold'>
                   <div className="mainbtn flex justify-center">
                   <Button name="Preview Product"/>
