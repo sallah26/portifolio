@@ -9,25 +9,25 @@ const Services = () => {
         {
             id: 0,
             title: "Website Development",
-            description: "Crafting dynamic and functional websites with cutting-edge technologies, ensuring a seamless user experience and optimal performance.",
+            description: "I bring your ideas to life, creating websites that work seamlessly and leave a lasting impression.",
             img: web_dev_img,
         },
         {
             id: 1,
             title: "Website Designing",
-            description: "Crafting dynamic and functional websites with cutting-edge technologies, ensuring a seamless user experience and optimal performance.",
+            description: "Let's elevate your brand together. I specialize in crafting visually stunning and user-friendly web designs.",
             img: web_desining_img,
         },
         {
             id: 2,
             title: "Graphics Designing",
-            description: "Crafting dynamic and functional websites with cutting-edge technologies, ensuring a seamless user experience and optimal performance.",
+            description: "Elevate your brand visually with my creative graphic design solutions. Transforming ideas into impactful visuals.",
             img: graphic_desining_img,
         },
         {
             id: 3,
             title: "Digital Consultancy",
-            description: "Crafting dynamic and functional websites with cutting-edge technologies, ensuring a seamless user experience and optimal performance.",
+            description: "Looking to outshine your online competition? I analyze and optimize your digital strategy for that winning edge.",
             img: consultancy_img,
         },
     ]
