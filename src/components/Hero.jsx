@@ -9,14 +9,16 @@ const Hero = () => {
         <div className='w-full lg:w-2/5 gap-3 flex flex-col p-4 lg:p-1'>
             <p className='text-xl font-semibold lg:text-2xl'>Hello I'm</p>
             <p className='my-name text-4xl  lg:text-5xl space-x-2 text-teal-500 dark:text-teal-400 '>Selahadin Hamid</p>
-            <p className='text-lg w-full '>Hello👋! I'm Selahadin Hamid, a front-end developer with
+            <p className='text-lg w-full '>Hello👋! I'm Selahadin Hamid, a front-end developer with  
                 a year of hands-on experience. I bring design visions to life,
                 creating eye-catching banners, captivating cards, and
                 distinctive logos, with expertise in transforming web designs into seamless
                 executable front-end code.
             </p>
             <div className='flex gap-4 font-semibold' >
+              <a href="../assets/resume/Selahadin_Hamid_Professional_Resume.pdf" download="Selahadin_Hamid_Professional_Resume.pdf">
                 <Button name={"Download Resume"}/>
+              </a>
                 <Button name={"Hire Me"}/>
             </div>
         </div>
