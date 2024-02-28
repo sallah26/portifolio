@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "./src/assets/resume/Selahadin_Hamid_Professional_Resume.pdf",
+        "destination": "./src/assets/resume/Selahadin_Hamid_Professional_Resume.pdf",
+        "headers": { "Content-Type": "application/pdf" }
+      }
+    ]
+  }
