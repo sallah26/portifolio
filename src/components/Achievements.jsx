@@ -54,13 +54,13 @@ const ProductsData2 = [
   },
   {
       id: 1,
-      title: "Website developed for jifar Agency",
+      title: "Loding my works...",
       image: "../assets/images/Selahadin_portifolio.png",
       link: "https://jifarhomes.com",
   },
   {
       id: 2,
-      title: "Website developed for jifar Agency",
+      title: "Loding my works...",
       image: "../assets/images/Selahadin_portifolio.png",
       link: "https://jifarhomes.com",
   },

@@ -1,8 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import profile_image from "../assets/images/Pro-Fom-PS.png";
 import Button from './Button';
 
 const Hero = () => {
+  const onButtonClick = () => {
+    // Use relative path to the PDF file
+    const pdfPath = "/SamplePDF.pdf";
+    const pdfUrl = process.env.PUBLIC_URL + pdfPath;
+
+    // Using fetch to download the PDF file
+    fetch(pdfUrl)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.blob();
+        })
+        .then(blob => {
+            const fileURL = window.URL.createObjectURL(blob);
+
+            // Creating new object of PDF file
+            const link = document.createElement("a");
+            link.href = fileURL;
+            link.download = "SamplePDF.pdf";
+            link.click();
+        })
+        .catch(error => {
+            console.error('Error fetching the PDF file:', error);
+        });
+};
   return (
     <section className=''>
       <div className='flex flex-col gap-4 lg:gap-7 lg:flex-row justify-center items-center py-7 lg:py-16  bg-zinc-100 dark:bg-[#2a3030] rounded-2xl shadow-2xl dark:shadow-slate-500 border-[1.5px] border-slate-400 dark:border-slate-500   text-black dark:text-stone-50'>
@@ -16,9 +42,9 @@ const Hero = () => {
                 executable front-end code.
             </p>
             <div className='flex gap-4 font-semibold' >
-              <a href="../assets/resume/Selahadin_Hamid_Professional_Resume.pdf" download="Selahadin_Hamid_Professional_Resume.pdf">
-                <Button name={"Download Resume"}/>
-              </a>
+              <button onClick={onButtonClick}>
+                <Button name={"Download Resume"} onClick={onButtonClick}/>
+              </button>
                 <Button name={"Hire Me"}/>
             </div>
         </div>

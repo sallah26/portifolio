@@ -38,9 +38,9 @@ const Footer = () => {
 
       
       </div>
-      {/* <div className="flex  pt-2 "> */}
+      {/* <div className="flex  pt-2 ">  */}
       <p className=' font-light pt-5 lg:mr-10'>
-        ©Copyright 2024 Selahadin H. 
+        ©Copyright 2024 Selahadin H.
       </p>
       {/* </div> */}
     </footer>
