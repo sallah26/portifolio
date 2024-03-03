@@ -15,7 +15,7 @@ const Education = () => {
             id: 1,
             title: "Intern Website Developer",
             description: "Assisted the web design and development team in creating responsive and user-friendly websites. I have developed full-stack music streaming and sharing web app",
-            time: "? - Present",
+            time: "july 2023 - oct 2023",
             place: "At Adama, Ethiopia",
         },
         {
@@ -29,7 +29,7 @@ const Education = () => {
             id: 0,
             title: "Highschool and Preparatory",
             description: "Attended both my Secondary and Preparatory School in Tora Secondary School at, Silte-Tora Ethiopia.",
-            time: "? - April 2021",
+            time: "Sept 2016 - April 2021",
             place: "At Silte-Tora, Ethiopia",
         },
     ]

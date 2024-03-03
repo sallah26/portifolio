@@ -85,7 +85,7 @@ const ProductsData2 = [
                 <div className='flex flex-col p-2 text-md font-semibold'>
                   <div className="mainbtn flex justify-center">
                     <a href={product.link}>
-                      <Button name="Preview Product"/>
+                      <Button name="view website"/>
                     </a>
                   </div>
                   {/* <button className='mainbtn text-blue-700 text-md'></button> */}
