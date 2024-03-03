@@ -8,6 +8,9 @@ import sShot5 from "../assets/images/Screenshot-demo.png";
 import sShot6 from "../assets/images/Screenshot-demo-light.png";
 import sShot7 from "../assets/images/Screenshot-afri-coffe.png";
 import sShot8 from "../assets/images/Screenshot-manag.png";
+import sShot9 from "../assets/images/Screenshot-logo-cosmic.png";
+import sShot10 from "../assets/images/Childos Arabic.png";
+import sShot11 from "../assets/images/Screenshot-dinner.png";
 import ButtonIcon from './ButtonIcon';
 import Button from './Button';
 
@@ -39,30 +42,30 @@ const Achievements = () => {
         link: "https://afri-coffee.vercel.app/",
     },
     {
-        id: 3,
-        title: "My Portfolio Website developed for Business Aim",
-        image: localStorage.theme === "dark" ? sShot4 : sShot3,
-        link: "https://jifarhomes.com",
-    },
-]
-const ProductsData2 = [
-  {
-      id: 0,
+      id: 3,
       title: "Landing page of developed for Simple tasks management",
       image: sShot8,
       link: "https://manage-app-selahadin.vercel.app/",
   },
+]
+const ProductsData2 = [
+  {
+      id: 0,
+      title: "Dinner Inviation Card Desinged for Programs Organizer Community.",
+      image: sShot11,
+      link: null,
+  },
   {
       id: 1,
-      title: "Loding my works...",
-      image: "../assets/images/Selahadin_portifolio.png",
-      link: "https://jifarhomes.com",
+      title: "Logo Design and Branding for a Cosmic-Labs tech.",
+      image: sShot9,
+      link: null,
   },
   {
       id: 2,
-      title: "Loding my works...",
-      image: "../assets/images/Selahadin_portifolio.png",
-      link: "https://jifarhomes.com",
+      title: "Youtube Thumbnail Designed for Youtube Channel",
+      image: sShot10,
+      link: null,
   },
 ]
 
