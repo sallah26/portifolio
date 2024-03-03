@@ -110,7 +110,7 @@ const ProductsData2 = [
                 <img src={product.image} className='rounded-ss-md rounded-se-md' alt="product image" />
                 <div className='flex flex-col p-2 text-md font-semibold'>
                   <div className="mainbtn flex justify-center">
-                  <Button name="Preview Product"/>
+                  {/* <Button name="Preview Product"/> */}
                   </div>
                   {/* <button className='mainbtn text-blue-700 text-md'></button> */}
                   <p>{product.title}</p>
