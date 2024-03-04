@@ -35,11 +35,11 @@ const Hero = () => {
         <div className='w-full lg:w-2/5 gap-3 flex flex-col p-4 lg:p-1'>
             <p className='text-xl font-semibold lg:text-2xl'>Hello I'm</p>
             <p className='my-name text-4xl  lg:text-5xl space-x-2 text-teal-500 dark:text-teal-400 '>Selahadin Hamid</p>
-            <p className='text-lg w-full '>Hello👋! I'm Selahadin Hamid, a front-end developer with  
-                a year of hands-on experience. I bring design visions to life,
-                creating eye-catching banners, captivating cards, and
-                distinctive logos, with expertise in transforming web designs into seamless
-                executable front-end code.
+            <p className='text-lg w-full '>Hello👋! I'm Selahadin Hamid, with  
+                a year of hands-on experience Specializing in frontend development, my focus is on
+                crafting visually stunning and responsive websites. Beyond coding, my knack for graphic design 
+                shines through in digital materials like elegant cards and dynamic banners, enhancing the overall 
+                online presence.
             </p>
             <div className='flex gap-4 font-semibold' >
               <button onClick={onButtonClick}>
