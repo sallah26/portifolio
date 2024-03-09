@@ -4,11 +4,8 @@ import Button from './Button';
 
 const Hero = () => {
   const onButtonClick = () => {
-    // Use relative path to the PDF file
     const pdfPath = "/SamplePDF.pdf";
     const pdfUrl = process.env.PUBLIC_URL + pdfPath;
-
-    // Using fetch to download the PDF file
     fetch(pdfUrl)
         .then(response => {
             if (!response.ok) {
@@ -18,8 +15,6 @@ const Hero = () => {
         })
         .then(blob => {
             const fileURL = window.URL.createObjectURL(blob);
-
-            // Creating new object of PDF file
             const link = document.createElement("a");
             link.href = fileURL;
             link.download = "SamplePDF.pdf";
@@ -27,8 +22,8 @@ const Hero = () => {
         })
         .catch(error => {
             console.error('Error fetching the PDF file:', error);
-        });
-};
+      });
+  };
   return (
     <section className=''>
       <div className='flex flex-col gap-4 lg:gap-7 lg:flex-row justify-center items-center py-7 lg:py-16  bg-zinc-100 dark:bg-[#2a3030] rounded-2xl shadow-2xl dark:shadow-slate-500 border-[1.5px] border-slate-400 dark:border-slate-500   text-black dark:text-stone-50'>
