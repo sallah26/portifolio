@@ -105,7 +105,14 @@ body{
 
  
 
-
+.tech-bg{
+  background: rgba(173, 203, 209, 0.644);
+  box-shadow: 0 8px 32px 0 rgba(4, 238, 255, 0.986);
+  backdrop-filter: blur( 1.5px );
+  -webkit-backdrop-filter: blur( 1.5px );
+  border-radius: 10px;
+  border: 1px solid rgba(146, 140, 140, 0.726);
+}
 
 
 

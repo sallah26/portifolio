@@ -10,6 +10,10 @@ import html_img7 from "../assets/images/tech-images/mongodb-original-wordmark.sv
 import html_img8 from "../assets/images/tech-images/file-type-firebase.svg"
 import html_img9 from "../assets/images/tech-images/file-type-git.svg"
 import html_img0 from "../assets/images/tech-images/github.svg"
+import html_img11 from "../assets/images/tech-images/Canva-logo-500x281-removebg-preview.png"
+import html_img12 from "../assets/images/tech-images/Adobe-Photoshop-Logo-2019-2020-removebg-preview.png"
+import html_img13 from "../assets/images/tech-images/adobe-xd-logo-64364E3A24-seeklogo.com-removebg-preview.png"
+
 
 const Technologies = () => {
   const TechsImage = [
@@ -51,14 +55,23 @@ const Technologies = () => {
     },{
       id: 10,
       img: html_img0,
+    },{
+      id: 11,
+      img: html_img11,
+    },{
+      id: 12,
+      img: html_img12,
+    },{
+      id: 13,
+      img: html_img13,
     },
   ]
-   
+ 
   return (
-    <section id='technologies' className='bg-sky-800 border-[2px] bg-opacity-90 border-slate-400 flex flex-col items-center justify-center gap-3 p-4 text-lg lg:gap-6 py-5 lg:py-20 text-center'>
+    <section id='technologies' className='tech-bg flex flex-col items-center justify-center gap-3 p-4 text-lg lg:gap-6 py-5 lg:py-20 text-center'>
       <div className='w-full lg:w-55'>
         <p className='text-3xl lg:5xl font-semibold'>What Technologies I Use?</p>
-        <p className='text-md lg:text-lg'>Transforming ideas into captivating digital realities through web design and development expertise, creating seamless and visually stunning digital experiences</p>
+        <p className='text-md lg:text-lg'>As you can see below my toolkit includes a range of languages, frameworks, and tools, ensuring versatility and excellence in every project.</p>
       </div>
       <div className='flex  flex-wrap gap-10 justify-center max-w-[1100px]'>
         {TechsImage.map((tech)=> {

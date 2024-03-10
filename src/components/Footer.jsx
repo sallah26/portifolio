@@ -5,6 +5,7 @@ import logo from "../assets/images/s-logo.png";
 import { PiTelegramLogo } from "react-icons/pi";
 import { FiPhoneCall } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -30,8 +31,8 @@ const Footer = () => {
                 <a href="https://t.me/selahadin_h" className='p-1.5 bg-slate-600 rounded-sm hover:bg-teal-500 text-white'>
                     <PiTelegramLogo size={24}/>
                 </a>
-                <a href="" className='p-1.5 bg-slate-600 rounded-sm hover:bg-teal-500 text-white'>
-                    <FiPhoneCall size={24}/>
+                <a href="https://twitter.com/SelahadinH" className='p-1.5 bg-slate-600 rounded-sm hover:bg-teal-500 text-white'>
+                    <FaXTwitter size={24}/>
                 </a>
                 
             </div>

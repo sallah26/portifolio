@@ -40,7 +40,9 @@ const Hero = () => {
               <button onClick={onButtonClick}>
                 <Button name={"Download Resume"} onClick={onButtonClick}/>
               </button>
-                <Button name={"Hire Me"}/>
+              <a href="https://www.upwork.com/freelancers/~01b9068d6eb1c2f118?mp_source=share">
+                <Button name={"Hire Me in Upwork"}/>
+              </a>
             </div>
         </div>
         <div>
