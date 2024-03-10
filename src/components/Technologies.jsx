@@ -68,7 +68,7 @@ const Technologies = () => {
   ]
  
   return (
-    <section id='technologies' className='tech-bg flex flex-col items-center justify-center gap-3 p-4 text-lg lg:gap-6 py-5 lg:py-20 text-center'>
+    <section id='technologies' className='tech-bg flex flex-col items-center justify-center gap-3 p-4 text-lg m-2 my-10 mt-4 lg:gap-6 py-5 lg:py-20 text-center'>
       <div className='w-full lg:w-55'>
         <p className='text-3xl lg:5xl font-semibold'>What Technologies I Use?</p>
         <p className='text-md lg:text-lg'>As you can see below my toolkit includes a range of languages, frameworks, and tools, ensuring versatility and excellence in every project.</p>
@@ -76,7 +76,7 @@ const Technologies = () => {
       <div className='flex  flex-wrap gap-10 justify-center max-w-[1100px]'>
         {TechsImage.map((tech)=> {
           return (
-            <div key={tech.id} className='w-10 md:w-20 flex items-center justify-center'>
+            <div key={tech.id} className='w-16 md:w-20 flex items-center justify-center'>
               <img src={tech.img} alt={tech.img} />
             </div>
           )
