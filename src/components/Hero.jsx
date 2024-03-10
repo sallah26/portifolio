@@ -31,7 +31,7 @@ const Hero = () => {
             <p className='text-xl font-semibold lg:text-2xl'>Hello I'm</p>
             <p className='my-name text-4xl  lg:text-5xl space-x-2 text-teal-500 dark:text-teal-400 '>Selahadin Hamid</p>
             <p className='text-lg w-full '>Hello👋! I'm Selahadin Hamid, with  
-                a year of hands-on experience Specializing in frontend development, my focus is on
+                a year of hands-on experience in website development, Specializing in frontend development. My focus is on
                 crafting visually stunning and responsive websites. Beyond coding, my knack for graphic design 
                 shines through in digital materials like elegant cards and dynamic banners, enhancing the overall 
                 online presence.
