@@ -37,9 +37,9 @@ const Hero = () => {
                 online presence.
             </p>
             <div className='flex gap-4 font-semibold' >
-              <button onClick={onButtonClick}>
-                <Button name={"Download Resume"} onClick={onButtonClick}/>
-              </button>
+              <a href='/SamplePDF.pdf' locale={false} >
+                <Button name={"Download Resume"} />
+              </a>
               <a href="https://www.upwork.com/freelancers/~01b9068d6eb1c2f118?mp_source=share">
                 <Button name={"Hire Me in Upwork"}/>
               </a>
