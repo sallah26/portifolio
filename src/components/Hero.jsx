@@ -4,7 +4,7 @@ import Button from './Button';
 
 const Hero = () => {
   const onButtonClick = () => {
-    const pdfPath = "/SamplePDF.pdf";
+    const pdfPath = "./SamplePDF.pdf";
     const pdfUrl = process.env.PUBLIC_URL + pdfPath;
     fetch(pdfUrl)
         .then(response => {
